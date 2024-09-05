@@ -12,8 +12,13 @@
     <body>
         <h1>Initial island demo</h1>
 
-        <mini-island>
+        <mini-island client:visible>
             <p>Hello future island</p>
+            <template data-island>
+                <script type="module">
+                    console.warn("This is a warning fron an island");
+                </script>
+            </template>
         </mini-island>
     </body>
 </html>
